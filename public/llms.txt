@@ -1,0 +1,9 @@
+# SEC-Hub
+
+> SEC-Hub is a systems engineering workspace for structuring complex systems and keeping engineering context connected.
+
+SEC-Hub helps engineering teams model hierarchical system structures, manage reference designations, visualize interfaces and dependencies, and collaborate around project information in one shared workspace.
+
+## Site
+
+- [SEC-Hub homepage](/): Product overview and information about system structuring, interface relationships, and contextual collaboration.
