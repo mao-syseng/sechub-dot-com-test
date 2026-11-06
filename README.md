@@ -45,6 +45,10 @@ All commands are run from the root of the project, from a terminal:
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
+## Netlify builds
+
+Netlify uses a case-sensitive filesystem. Component import paths must exactly match the filenames tracked by Git, including capitalization. On case-insensitive systems such as macOS, use `git mv` through a temporary filename when changing only a filename's capitalization.
+
 ## SEC-Hub navigation
 
 The shared [navbar](./src/components/Navbar.astro) uses the favicon as its logo, with centered mock links and a Log in button. On smaller screens, the links wrap onto a second row. The links and login button are placeholders; authentication is not connected.
