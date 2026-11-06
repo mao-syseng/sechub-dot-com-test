@@ -25,50 +25,64 @@ export function NavbarClient() {
           </a>
 
           <nav className="hidden lg:block">
-              <NavigationMenu>
-                <NavigationMenuList>
-                  <NavigationMenuItem>
-                    <NavigationMenuLink href="#" className="h-9 w-max px-2.5 py-1.5 font-medium">
-                      ISO/IEC 81346
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuLink href="#" className="h-9 w-max px-2.5 py-1.5 font-medium">
+                    ISO/IEC 81346
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
 
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger>Software</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[220px] gap-1 p-2">
-                        <li><NavigationMenuLink href="#">SEC-Hub</NavigationMenuLink></li>
-                        <li><NavigationMenuLink href="#">RDS 81346 App</NavigationMenuLink></li>
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Software</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[220px] gap-1 p-2">
+                      <li>
+                        <NavigationMenuLink href="#">SEC-Hub</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#">RDS 81346 App</NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
-                  <NavigationMenuItem>
-                    <NavigationMenuLink href="#" className="h-9 w-max px-2.5 py-1.5 font-medium">
-                      Free Material
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink href="#" className="h-9 w-max px-2.5 py-1.5 font-medium">
+                    Free Material
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
 
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger>Knowledge Center</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[220px] gap-1 p-2">
-                        <li><NavigationMenuLink href="#">RDS 81346 Ontology</NavigationMenuLink></li>
-                        <li><NavigationMenuLink href="#">Videos</NavigationMenuLink></li>
-                        <li><NavigationMenuLink href="#">Why RDS 81346</NavigationMenuLink></li>
-                        <li><NavigationMenuLink href="#">Articles</NavigationMenuLink></li>
-                        <li><NavigationMenuLink href="#">FAQ</NavigationMenuLink></li>
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Knowledge Center</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[220px] gap-1 p-2">
+                      <li>
+                        <NavigationMenuLink href="#">RDS 81346 Ontology</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#">Videos</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#">Why RDS 81346</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#">Articles</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#">FAQ</NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
-                  <NavigationMenuItem>
-                    <NavigationMenuLink href="#" className="h-9 w-max px-2.5 py-1.5 font-medium">
-                      About
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                </NavigationMenuList>
-              </NavigationMenu>
+                <NavigationMenuItem>
+                  <NavigationMenuLink href="#" className="h-9 w-max px-2.5 py-1.5 font-medium">
+                    About
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </nav>
 
           <Button
@@ -86,26 +100,84 @@ export function NavbarClient() {
 
         {isOpen && (
           <nav id="mobile-navigation" className="border-t border-border/40 pb-2 lg:hidden">
-            <a href="#" onClick={() => setIsOpen(false)} className="block px-4 py-3 text-sm font-medium hover:bg-muted">
+            <a
+              href="#"
+              onClick={() => setIsOpen(false)}
+              className="block px-4 py-3 text-sm font-medium hover:bg-muted"
+            >
               ISO/IEC 81346
             </a>
             <details className="group">
-              <summary className="cursor-pointer list-none px-4 py-3 text-sm font-medium hover:bg-muted">Software</summary>
-              <a href="#" onClick={() => setIsOpen(false)} className="block px-6 py-3 text-sm hover:bg-muted">SEC-Hub</a>
-              <a href="#" onClick={() => setIsOpen(false)} className="block px-6 py-3 text-sm hover:bg-muted">RDS 81346 App</a>
+              <summary className="cursor-pointer list-none px-4 py-3 text-sm font-medium hover:bg-muted">
+                Software
+              </summary>
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3 text-sm hover:bg-muted"
+              >
+                SEC-Hub
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3 text-sm hover:bg-muted"
+              >
+                RDS 81346 App
+              </a>
             </details>
-            <a href="#" onClick={() => setIsOpen(false)} className="block px-4 py-3 text-sm font-medium hover:bg-muted">
+            <a
+              href="#"
+              onClick={() => setIsOpen(false)}
+              className="block px-4 py-3 text-sm font-medium hover:bg-muted"
+            >
               Free Material
             </a>
             <details className="group">
-              <summary className="cursor-pointer list-none px-4 py-3 text-sm font-medium hover:bg-muted">Knowledge Center</summary>
-              <a href="#" onClick={() => setIsOpen(false)} className="block px-6 py-3 text-sm hover:bg-muted">RDS 81346 Ontology</a>
-              <a href="#" onClick={() => setIsOpen(false)} className="block px-6 py-3 text-sm hover:bg-muted">Videos</a>
-              <a href="#" onClick={() => setIsOpen(false)} className="block px-6 py-3 text-sm hover:bg-muted">Why RDS 81346</a>
-              <a href="#" onClick={() => setIsOpen(false)} className="block px-6 py-3 text-sm hover:bg-muted">Articles</a>
-              <a href="#" onClick={() => setIsOpen(false)} className="block px-6 py-3 text-sm hover:bg-muted">FAQ</a>
+              <summary className="cursor-pointer list-none px-4 py-3 text-sm font-medium hover:bg-muted">
+                Knowledge Center
+              </summary>
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3 text-sm hover:bg-muted"
+              >
+                RDS 81346 Ontology
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3 text-sm hover:bg-muted"
+              >
+                Videos
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3 text-sm hover:bg-muted"
+              >
+                Why RDS 81346
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3 text-sm hover:bg-muted"
+              >
+                Articles
+              </a>
+              <a
+                href="#"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3 text-sm hover:bg-muted"
+              >
+                FAQ
+              </a>
             </details>
-            <a href="#" onClick={() => setIsOpen(false)} className="block px-4 py-3 text-sm font-medium hover:bg-muted">
+            <a
+              href="#"
+              onClick={() => setIsOpen(false)}
+              className="block px-4 py-3 text-sm font-medium hover:bg-muted"
+            >
               About
             </a>
           </nav>
