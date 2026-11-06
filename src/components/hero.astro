@@ -1,39 +1,42 @@
 ---
-import { Image } from "astro:assets"
-import heroImage from "@/assets/hero.png"
-import HeroButtons from "@/components/ui/hero-buttons"
+import { Image } from 'astro:assets';
+import hero from '../assets/hero.png';
 ---
 
-<section class="relative min-h-screen overflow-hidden bg-background">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-12">
-      {/* Content */}
-      <div class="flex flex-col justify-center space-y-8">
-        <div>
-          <h1 class="text-5xl sm:text-6xl font-bold tracking-tight mb-6">
-            Built for systems engineering
-          </h1>
-          <p class="text-xl text-muted-foreground leading-relaxed mb-8">
-            Model, structure and collaborate on complex engineering systems in
-            one shared workspace. SEC-Hub brings reference designations,
-            object structures, interfaces and project context together.
-          </p>
-        </div>
-
-        <HeroButtons />
-      </div>
-
-      {/* Image */}
-      <div class="relative flex items-center justify-center">
-        <div class="relative w-full">
-          <Image
-            src={heroImage}
-            alt="SEC-Hub systems engineering platform"
-            class="w-full h-auto rounded-lg"
-            loading="eager"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+	<main>
+		<section class="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:px-10">
+			<div>
+				<h1 class="text-4xl font-semibold text-slate-950 sm:text-5xl">Built for systems engineering</h1>
+				<p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+					Model, structure and collaborate on complex engineering systems in
+					one shared workspace. SEC-Hub brings reference designations,
+					object structures, interfaces and project context together.
+				</p>
+				<div class="mt-8 flex flex-wrap gap-3">
+					<button
+						type="button"
+						class="rounded-md bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+					>
+						Request demo
+					</button>
+					<button
+						type="button"
+						class="rounded-md border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-slate-400 hover:bg-slate-50"
+					>
+						Log in
+					</button>
+				</div>
+			</div>
+			<Image
+				class="h-auto w-full"
+				src={hero}
+				alt="SEC-Hub functional structure and interface matrix"
+				format="webp"
+				layout="full-width"
+				width={720}
+				sizes="(min-width: 1280px) 576px, (min-width: 768px) calc((100vw - 128px) / 2), calc(100vw - 48px)"
+				loading="eager"
+				fetchpriority="high"
+			/>
+		</section>
+	</main>

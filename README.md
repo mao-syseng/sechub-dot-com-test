@@ -1,36 +1,54 @@
-# Astro + React + TypeScript + shadcn/ui
+# Astro Starter Kit: Basics
 
-This is a template for a new Astro project with React, TypeScript, and shadcn/ui.
-
-## Adding components
-
-To add components to your app, run the following command:
-
-```bash
-npx shadcn@latest add button
+```sh
+npm create astro@latest -- --template basics
 ```
 
-This will place the ui components in the `src/components` directory.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Using components
+## 🚀 Project Structure
 
-To use the components in your app, import them in an `.astro` file:
+Inside of your Astro project, you'll see the following folders and files:
 
-```astro
----
-import { Button } from "@/components/ui/button"
----
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro App</title>
-  </head>
-  <body>
-    <div class="grid h-screen place-items-center content-center">
-      <Button>Button</Button>
-    </div>
-  </body>
-</html>
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
 ```
+
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## SEC-Hub navigation
+
+The shared [navbar](./src/components/Navbar.astro) uses the favicon as its logo, with centered mock links and a Log in button. On smaller screens, the links wrap onto a second row. The links and login button are placeholders; authentication is not connected.
+
+## Images
+
+The [hero](./src/components/Hero.astro) uses Astro's `Image` component to generate responsive WebP images with explicit dimensions and high-priority loading for above-the-fold content. Its `sizes` attribute matches the page's one- and two-column layouts. The navbar also uses `Image` with explicit dimensions, but keeps the favicon SVG in `public/` unchanged since it is already scalable.
