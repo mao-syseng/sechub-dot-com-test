@@ -4,7 +4,7 @@ import { z } from "astro/zod";
 
 const updates = defineCollection({
   loader: glob({
-    base: "./src/content/now",
+    base: "./src/content/new",
     pattern: "**/*.{md,mdx}",
   }),
   schema: z.object({

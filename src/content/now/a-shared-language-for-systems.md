@@ -29,4 +29,4 @@ The goal is not to capture every detail immediately. It is to make the next conv
 
 Treat the structure as a working model. Update it when decisions change, and use it to explain the reasoning behind those decisions.
 
-Browse the [Now overview](/now/) for more sample articles.
+Browse the [more news](/new/) for more sample articles.

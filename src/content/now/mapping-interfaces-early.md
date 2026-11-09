@@ -28,4 +28,4 @@ A short review is often enough to reveal a dependency that would otherwise stay 
 
 An interface is easier to understand when its context is clear. Link it to the systems it connects and keep the description close to the relevant engineering decisions.
 
-For another perspective, read [A shared language for complex systems](/now/a-shared-language-for-systems/).
+For another perspective, read [A shared language for complex systems](/new/a-shared-language-for-systems/).
