@@ -1,6 +1,16 @@
 ---
 import '../styles/global.css'
 import Navbar from '../components/Navbar.astro'
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = 'SEC-Hub | Systems engineering workspace',
+	description = 'SEC-Hub brings system structures, reference designations and interfaces together so engineering teams can model complex systems and collaborate in one shared workspace.',
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -9,11 +19,11 @@ import Navbar from '../components/Navbar.astro'
 		<meta name="viewport" content="width=device-width" />
 		<meta
 			name="description"
-			content="SEC-Hub brings system structures, reference designations and interfaces together so engineering teams can model complex systems and collaborate in one shared workspace."
+			content={description}
 		/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>SEC-Hub | Systems engineering workspace</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<Navbar /> 

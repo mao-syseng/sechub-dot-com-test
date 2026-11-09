@@ -1,0 +1,44 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ArticleTags from './ArticleTags.astro';
+
+interface Props {
+	posts: CollectionEntry<'updates'>[];
+}
+
+const { posts } = Astro.props;
+const sortedPosts = [...posts]
+	.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+
+const dateFormat = new Intl.DateTimeFormat('en', {
+	dateStyle: 'long',
+	timeZone: 'UTC',
+});
+---
+
+{sortedPosts.length === 0 ? (
+	<p class="mt-12 text-slate-600">Nothing here yet. Check back soon for updates.</p>
+) : (
+	<ul class="mt-12 grid gap-6 md:grid-cols-2">
+		{sortedPosts.map((post) => (
+			<li class="rounded-2xl border border-slate-200 p-8">
+				<article>
+					<div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-500">
+						<span>{post.data.category}</span>
+						<time datetime={post.data.publishedAt.toISOString()}>{dateFormat.format(post.data.publishedAt)}</time>
+					</div>
+					<h2 class="mt-4 text-2xl font-semibold tracking-tight text-slate-950">
+						<a
+							href={`/now/${post.id}/`}
+							class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-950"
+						>
+							{post.data.title}
+						</a>
+					</h2>
+					<p class="mt-4 leading-7 text-slate-600">{post.data.description}</p>
+					<ArticleTags tags={post.data.tags} />
+				</article>
+			</li>
+		))}
+	</ul>
+)}
