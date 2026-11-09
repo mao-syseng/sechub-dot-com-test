@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import aalborgForsyning from '../assets/companies/aalborgforsyning.svg';
+import aarhusVand from '../assets/companies/aarhusvand.svg';
+import airbus from '../assets/companies/airbus.svg';
+import makeen from '../assets/companies/makeen.svg';
+import orsted from '../assets/companies/orsted.svg';
+---
+
+<section aria-labelledby="companies-title" class="border-y border-slate-200 bg-white">
+	<div class="mx-auto max-w-7xl px-6 py-12 md:px-10">
+		<h2 id="companies-title" class="text-center text-sm font-semibold uppercase tracking-wide text-slate-500">
+			Trusted by teams at
+		</h2>
+		<ul class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-8 sm:gap-x-14">
+			<li>
+				<Image class="h-10 w-auto max-w-40" src={aalborgForsyning} alt="Aalborg Forsyning" />
+			</li>
+			<li>
+				<Image class="h-10 w-auto max-w-40" src={aarhusVand} alt="Aarhus Vand" />
+			</li>
+			<li>
+				<Image class="h-9 w-auto max-w-36" src={airbus} alt="Airbus" />
+			</li>
+			<li>
+				<Image class="h-10 w-auto max-w-36" src={makeen} alt="Makeen" />
+			</li>
+			<li>
+				<Image class="h-10 w-auto max-w-36" src={orsted} alt="Ørsted" />
+			</li>
+		</ul>
+	</div>
+</section>
