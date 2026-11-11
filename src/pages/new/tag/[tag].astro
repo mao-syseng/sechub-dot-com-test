@@ -28,8 +28,8 @@ const { tag, posts } = Astro.props;
 <Layout title={`#${tag} | New | SEC-Hub`} description={`Articles tagged ${tag} from SEC-Hub.`}>
 	<main class="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
 		<header class="max-w-2xl">
-			<a href="/new/" class="rounded-sm text-sm font-medium text-slate-600 underline underline-offset-4 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-950">Back to all articles</a>
-			<h1 class="mt-6 text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl">#{tag}</h1>
+			<a href="/new/" class="rounded-sm text-sm font-medium text-slate-600 underline underline-offset-4 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Back to all articles</a>
+			<h1 class="mt-6 text-4xl font-semibold tracking-tight text-primary md:text-6xl">#{tag}</h1>
 			<p class="mt-6 text-lg leading-8 text-slate-600">
 				{posts.length} {posts.length === 1 ? 'article' : 'articles'} tagged #{tag}.
 			</p>

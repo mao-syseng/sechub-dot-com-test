@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* Brand colors. See AGENTS.md for usage. */
+@theme static {
+  --color-primary: #000064;
+  --color-accent: #ed7d31;
+}

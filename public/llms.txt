@@ -1,9 +1,34 @@
 # SEC-Hub
 
-> SEC-Hub is a systems engineering workspace for structuring complex systems and keeping engineering context connected.
+> SEC-Hub is a B2B systems engineering software platform for modelling, structuring and collaborating on complex systems in one shared workspace.
 
-SEC-Hub helps engineering teams model hierarchical system structures, manage reference designations, visualize interfaces and dependencies, and collaborate around project information in one shared workspace.
+SEC-Hub brings reference designations, hierarchical object structures, interfaces and project context together. It helps engineering teams maintain a shared engineering language and traceable information across disciplines using the ISO/IEC 81346 (RDS 81346) approach.
 
-## Site
+Core capabilities include breaking down and classifying systems, visualising dependencies and N2-style interface structures, and connecting aspect types and engineering domains through Domain Relations (DOMA). Owners, progress, custom fields and engineering metadata stay close to the model.
 
-- [SEC-Hub homepage](/): Product overview and information about system structuring, interface relationships, and contextual collaboration.
+Pricing is scoped with each organisation based on users and roles, projects, workspaces, data volume, API and integration needs, onboarding and support. The site does not publish fixed prices. Demo requests, pricing enquiries and product questions are handled by email at info@syseng.dk.
+
+## Main pages
+
+- [SEC-Hub homepage](/): Product overview, system structures and reference designations, interface mapping, domain relations, contextual collaboration and company logos.
+- [Pricing](/pricing/): How pricing is scoped to an organisation's project setup and support needs.
+- [Contact](/contact/): Request a demo or discuss product questions, pricing and project fit by emailing info@syseng.dk.
+- [New](/new/): Articles, ideas and updates on building a shared understanding of complex systems, listed by publication date with categories and tags.
+
+## Articles
+
+The two current articles are explicitly described as sample or test content.
+
+- [A shared language for complex systems](/new/a-shared-language-for-systems/): Sample article about common system structures, visible relationships and collaboration. Published 9 November 2026; category: Systems engineering; tags: systems, collaboration.
+- [Mapping interfaces before the details](/new/mapping-interfaces-early/): Sample checklist for reviewing dependencies, responsibilities and cross-team handovers. Published 6 November 2026; category: Engineering practice; tags: interfaces, planning. Featured on the homepage.
+
+## Article tags
+
+- [Systems](/new/tag/systems/): Articles tagged systems.
+- [Collaboration](/new/tag/collaboration/): Articles tagged collaboration.
+- [Interfaces](/new/tag/interfaces/): Articles tagged interfaces.
+- [Planning](/new/tag/planning/): Articles tagged planning.
+
+## Application
+
+- [SEC-Hub login](https://app.sec-hub.com): Application login linked from the site's navigation and homepage.
