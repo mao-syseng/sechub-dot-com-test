@@ -5,3 +5,7 @@ The site uses regular page links, with no client-side router. The [shared layout
 # Link previews
 
 The [shared layout](./src/layouts/Layout.astro) uses each page's title and description for social previews, with a shared [preview image](./public/social-card.png). Absolute URLs are based on the `site` setting in [astro.config.mjs](./astro.config.mjs).
+
+# Sitemap
+
+`npm run build` generates `/sitemap-index.xml` and `/sitemap-0.xml` from the site's static routes. The index is advertised in the [shared layout](./src/layouts/Layout.astro) and [robots.txt](./public/robots.txt).
