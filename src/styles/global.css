@@ -5,3 +5,9 @@
   --color-primary: #000064;
   --color-accent: #ed7d31;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}

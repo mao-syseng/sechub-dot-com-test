@@ -24,10 +24,32 @@ const {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script is:inline type="speculationrules">
+			{ "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }] }
+		</script>
 	</head>
 	<body>
 		<Navbar /> 
 		<slot />
+		<footer class="border-t border-primary/10 bg-slate-50">
+			<div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm md:flex-row md:px-10">
+				<p class="text-slate-600">© Systems Engineering A/S</p>
+				<nav aria-label="Footer" class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+					<a
+						href="https://81346.com/"
+						class="font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+					>
+						81346.com
+					</a>
+					<a
+						href="https://systemsengineeringconcept.com/"
+						class="font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+					>
+						Systems Engineering Concept
+					</a>
+				</nav>
+			</div>
+		</footer>
 	</body>
 </html>
 

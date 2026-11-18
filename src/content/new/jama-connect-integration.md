@@ -3,7 +3,7 @@ title: "Bring your system architecture into Jama Connect"
 description: "Export OOCs from SEC-Hub to Jama Connect and connect your system structure with requirements management workflows."
 publishedAt: 2026-11-11
 category: "Integrations"
-tags: ["Jama Connect", "integration", "OOCs", "systems engineering"]
+tags: ["jama-connect", "integration", "ooc", "systems-engineering"]
 ---
 
 Engineering teams need a clear view of their system architecture, but that structure is most useful when it can support the tools they already work with. With SEC-Hub's **Jama Connect integration**, you can export the OOCs defined in SEC-Hub to Jama Connect, bringing your architecture into your requirements management environment.

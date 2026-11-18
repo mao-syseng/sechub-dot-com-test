@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import standard81346 from '../assets/81346.svg';
 import Highlights from '../components/Highlights.astro';
 import Companies from '../components/Companies.astro';
 import Features from '../components/Features.astro';
@@ -11,4 +13,44 @@ import Layout from '../layouts/Layout.astro';
 	<Companies />
 	<Highlights />
 	<Features />
+	<section id="81346" aria-labelledby="standard-title" class="bg-primary px-6 py-20 text-white sm:py-28 md:px-10">
+		<div class="mx-auto max-w-3xl text-center">
+			<div class="mx-auto mb-6 w-fit rounded-xl bg-white p-4">
+				<Image src={standard81346} alt="RDS 81346" class="h-20 w-auto" />
+			</div>
+			<h2 id="standard-title" class="text-4xl font-bold tracking-tight sm:text-5xl">
+				Built around a shared engineering language
+			</h2>
+			<p class="mt-6 text-lg leading-8 text-white/80">
+				SEC-Hub supports organisations that use the ISO/IEC 81346 standard series to create consistent system structures, identifiers and engineering context across projects.
+			</p>
+			<ul class="mt-8 flex flex-wrap justify-center gap-3" role="list">
+				<li class="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium">Consistent identifiers</li>
+				<li class="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium">Structured information</li>
+				<li class="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium">Cross-discipline clarity</li>
+			</ul>
+			<a
+				href="https://81346.com/"
+				class="mt-8 inline-block font-semibold text-white underline decoration-accent decoration-2 underline-offset-4 transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+			>
+				Learn more about RDS 81346 at 81346.com
+			</a>
+		</div>
+	</section>
+	<section aria-labelledby="demo-title" class="px-6 py-20 sm:py-28 md:px-10">
+		<div class="mx-auto max-w-3xl text-center">
+			<h2 id="demo-title" class="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+				See how SEC-Hub fits your project
+			</h2>
+			<p class="mt-6 text-lg leading-8 text-slate-600">
+				Get a walkthrough of the product, discuss your current engineering structure and explore how SEC-Hub can support your organisation.
+			</p>
+			<a
+				href="/contact/"
+				class="mt-8 inline-flex rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+			>
+				Get a free demo
+			</a>
+		</div>
+	</section>
 </Layout>
