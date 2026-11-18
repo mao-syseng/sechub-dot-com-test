@@ -29,7 +29,7 @@ const publishedAt = new Intl.DateTimeFormat('en', {
 }).format(post.data.publishedAt);
 ---
 
-<Layout title={`${post.data.title} | SEC-Hub`} description={post.data.description}>
+<Layout title={`${post.data.title} | SEC-Hub`} description={post.data.description} pageType="article">
   <main class="mx-auto max-w-3xl px-6 py-16 md:py-24">
     <a href="/new/" class="rounded-sm text-sm font-medium text-slate-600 underline underline-offset-4 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Back to all articles</a>
     <article class="mt-10">
